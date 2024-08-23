@@ -1,0 +1,119 @@
+.announcements {
+  padding: 40px;
+  margin-top: 5%;
+  margin-left: auto;
+  background: linear-gradient(to right, #cb995d, #F0A34A, #D96301);
+  margin-right: auto;
+  width: 500%;
+  color: whitesmoke;
+  max-width: 1000px;
+  text-align: left; 
+  border: 1px solid rgb(109, 109, 146);
+  display: flex; 
+  flex-direction: row; /* Align sections in a row */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.announcements h1 {
+  color: whitesmoke;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: left; /* Align heading to the left */
+}
+
+.left-section {
+  width: 100%; /* Define width of the left section */
+  padding-right: 20px; /* Space between the left section and carousel */
+  margin-right: 20px;
+  margin-top: 2%; /* Add margin to separate from carousel */
+  border-right: 2px solid #ddd; /* Optional: adds a border to the right */
+}
+
+.left-section h2 {
+  font-size: 20px;
+  color: rgb(149, 59, 10);
+  font-weight: 600;
+  margin-bottom: 15px; /* Add some space below the title */
+}
+
+.left-section button {
+  background-color: rgb(224, 59, 9);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px; /* Increase padding for better spacing */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-section button:hover {
+  background-color: rgb(7, 7, 180);
+}
+
+.car-container {
+  width: 50%;
+  margin-top: 3%; /* Adjust width to accommodate left section */
+  height: 300px;
+  padding-left: 30%;
+  overflow: hidden;
+  position: relative;
+  border: 3px thin black;
+}
+
+.car {
+  position: absolute;
+  top: 0x;
+  left: 0;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.car-item {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color:whitesmoke;
+  height: 50px;
+  line-height: 50px;
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px dashed #ddd;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.car i {
+  font-size: 10px;
+  color: black;
+  margin-left: 10px;
+}
+
+.car a {
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(9, 9, 224);
+}
+
+.news .seal {
+  font-weight: 600;
+  color: whitesmoke;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+  width: 300%;
+  display: inline;
+  margin-top: 200%;
+  margin-left: -100%; /* Space above the seal link */
+  display: inline-block; /* Allow proper centering */
+  font-size: 17px;
+  font-family: bold;
+  color: rgb(109, 109, 146);
+  cursor: pointer;
+}
+
+.news .seal:hover {
+  text-decoration: underline;
+  color: rgb(9, 9, 224);
+}
