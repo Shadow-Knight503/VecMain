@@ -19,7 +19,7 @@ const ImgSld = () => {
          </div>
         <div
           id="carousel"
-          className="carousel slide col-md-6 absolute mr-[1.5vmax] w-[1750vmax] md:w-[50%]"
+          className="carousel slide col-md-4 absolute mr-[1.5vmax] w-[1750vmax] md:w-[50%]"
           data-bs-wrap="true"
           data-bs-ride="carousel"
         >
