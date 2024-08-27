@@ -86,7 +86,7 @@ body {
 }
 
 .event-row.department-name {
-  background:linear-gradient(to right, #E0963A, #F0A34A, #D96301);
+  background:linear-gradient(to right, #D96301 0%, #F0A34A 50%, #D96301 100%);
   color: white;
   text-align: center;
   padding: 10px;
