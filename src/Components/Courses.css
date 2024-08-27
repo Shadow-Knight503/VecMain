@@ -9,11 +9,7 @@
   overflow: hidden;
   position: relative;
   -webkit-user-drag: none; /* For Safari */
-<<<<<<< HEAD
-  margin-top: -34%;
-=======
   margin-top: -30vmax;
->>>>>>> d61bbcb4b25206b028a6459a47cad347e0565584
 }
 
 .head {

@@ -32,32 +32,6 @@ const ImgSld = () => {
 
 
   return (
-<<<<<<< HEAD
-    <div className='w-[100vw] max-h-[55vh] relative bg-gradient-to-r from-amber-500 to-amber-700'>
-      <div className='xl:h-[10vmax] lg:h-[10vmax] md:h-[6vmax] h-[5.5vmax] '></div>
-      <div className="flex justify-items-stretch bg-none bg-transparent w-[100vw]">
-        <div className="w-[100vw]">
-          <h2 className="quote md:block hidden left-[2rem] lg:max-w-[27.5vmax] max-w-[35vmax] text-[1.9vmax] lg:text-[1.55vmax] font-rome absolute">
-            <span className='block font-bold pb-1 text-[2vmax] lg:text-[1.65vmax]'>Our Vission:</span>
-            “To educate the student community both by theory and practice to fit in with the society and to conquer tomorrow’s technology at global level with human values through our dedicated team.”</h2>
-         </div>
-        <div
-          id="carousel"
-          className="carousel slide col-md-4 absolute mr-[1.5vmax] w-[1750vmax] md:w-[50%]"
-          data-bs-wrap="true"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner p-[1vmax]">
-            <div className="carousel-item active">
-              <img src={Dest} className="w-100 rounded-lg" />
-            </div>
-            <div className="carousel-item" data-bs-interval="2000">
-              <img src={Rank} className="w-100 rounded-lg" />
-            </div>
-            <div className="carousel-item">
-              <img src={Rslt} className="w-100 rounded-lg" />
-            </div>
-=======
     <div className='w-[100vw] relative bg-gradient-to-r from-amber-500 to-amber-700'>
       <div className="flex h-[35vmax] top-[15vmax] bg-center overflow-hidden relative justify-items-stretch bg-transparent w-[100vw]">
         <video className='min-h-[50vmax] w-[100vmax] bg-center fixed top-0 z-0' autoPlay loop muted id='BgVid'>
@@ -70,7 +44,6 @@ const ImgSld = () => {
                 [border-image:linear-gradient(to_right,#d96402,#efa249,#d96402)_1]`} 
                 style={{animationDelay: `${i * 5}s`}}>{elm}</p>
             ))}
->>>>>>> d61bbcb4b25206b028a6459a47cad347e0565584
           </div>
         </div>
         <video className={`h-auto w-[100vw] bg-center fixed ${vid} z-0`}>
