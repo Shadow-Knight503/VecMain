@@ -3,11 +3,11 @@
 .abt{
     font-size: 20px;
     text-align: center;
-    /* width: 900px; */
+    /* width: 1400px; */
     margin-top: 90px;
     /*border: solid 2px rgb(182, 177, 177);*/
     /* margin-left: 22%; */
-    margin: 10px;
+    margin: 5vmin;
     border-radius: 10px;
 }
 
