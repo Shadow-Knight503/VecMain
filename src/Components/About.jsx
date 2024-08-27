@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className='abt'>
+    <div className='abt bg-white'>
         <div>
         <h5 style={{color:"maroon", marginTop:"40px"}}>A Journey of Thousand Miles Begins with a Single Step</h5>
         <br></br>

@@ -13,13 +13,21 @@
 
   color: white;
   padding: 20px;
+<<<<<<< HEAD
   position: relative;
+=======
+  /* position: absolute; */
+>>>>>>> d61bbcb4b25206b028a6459a47cad347e0565584
   left: 0;
   top:200%;
   width: 100%;
   box-sizing: border-box;
   z-index: 1;
+<<<<<<< HEAD
   /* margin-top: 72%; */
+=======
+  /* margin-top: 80%; */
+>>>>>>> d61bbcb4b25206b028a6459a47cad347e0565584
 }
 
 .contact-details {
