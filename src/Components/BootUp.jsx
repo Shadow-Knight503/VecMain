@@ -14,7 +14,7 @@ const Boot = () => {
 
     return (
         <>
-            <div className='hidden justify-center items-center bg-slate-200 fixed w-[100vw] h-[100vh] z-[1000]'>
+            <div className='flex justify-center items-center bg-white fixed w-[100vw] h-[100vh] z-[1000] animate-[slideUp_1s_ease_forwards] [animation-delay:3s]'>
                 <div className='relative w-[20vmax] h-[20vmax] group/ttl'>
                     <div className='w-full h-full [clip-path:polygon(0_0,100%_0,100%_50%,65%_65%,53%_80%,60%_70%,50%_40%,40%_70%,42%_70%,0_45%)] absolute'>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox='0 0 500 500' className='[animation-delay:0.5s,1.5s] scale-0 animate-[sizeUp_1s_ease_forwards,twirl_1.5s_ease_infinite]  origin-center duration-300 transition-all absolute w-full h-full p-[15%] mt-2'>
@@ -22,10 +22,10 @@ const Boot = () => {
                                 className='fill-amber-400' transform="translate(251.9375,28.8125)"/>
                         </svg>
                     </div>
-                    <div className='absolute origin-center w-full h-full border border-black'>
+                    <div className='absolute origin-center w-full h-full'>
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='relative w-full h-full group duration-300 transition-all'>
                             <path d="M 46.5 85 C 35 70, 40 62.5, 50 45 C 60 62.5, 65 70, 53.5 85 C 60 70, 55 60, 50 54 C 45 60, 40 70, 46.5 85"
-                            className='fill-orange-600 stroke-orange stroke-1 absolute origin-bottom translate-y-[-5%]' />
+                                className='fill-orange-600 stroke-orange stroke-1 stroke-white absolute origin-bottom translate-y-[-5%]' />
                             <path d="M 46.5 85 C 35 70, 40 62.5, 50 45 C 60 62.5, 65 70, 53.5 85 C 60 70, 55 60, 50 54 C 45 60, 40 70, 46.5 85"
                                 className='fill-orange-600 stroke-orange stroke-1 absolute animate-[lowPetR_1s_ease_forwards]
                                 origin-bottom translate-y-[-5%]
@@ -35,24 +35,28 @@ const Boot = () => {
                                 origin-bottom translate-y-[-5%]
                                 [clip-path:polygon(0_0,100%_0,100%_50%,50%_50%,50%_100%,0_100%)] duration-300 transition-all' />
                             <path d="M 46.5 85 C 35 70, 40 62.5, 50 45 C 60 62.5, 65 70, 53.5 85 C 60 70, 55 60, 50 54 C 45 60, 40 70, 46.5 85"
-                                className='fill-orange-600 stroke-orange stroke-1 absolute animate-[midPetR_1s_ease_forwards]
+                                className='fill-orange-600 stroke-orange stroke-1 stroke-white absolute animate-[midPetR_1s_ease_forwards]
                                 origin-bottom translate-y-[-5%]
                                 duration-300 transition-all' />
                             <path d="M 46.5 85 C 35 70, 40 62.5, 50 45 C 60 62.5, 65 70, 53.5 85 C 60 70, 55 60, 50 54 C 45 60, 40 70, 46.5 85"
-                                className='fill-orange-600 stroke-orange stroke-1 absolute animate-[midPetL_1s_ease_forwards]
+                                className='fill-orange-600 stroke-orange stroke-1 stroke-white absolute animate-[midPetL_1s_ease_forwards]
                                 origin-bottom translate-y-[-5%]
                                 duration-300 transition-all' />
                         </svg>
                     </div>
                 </div>
-                {/* <div className='basis-full h-0 w-0 border border-black'></div> */}
-                <div className='absolute xl:top-[66%] md:top-[62%] top-[60%] border border-black w-fit h-auto grid grid-cols-1 gap-y-0 content-center duration-300 ease-out transition-all overflow-hidden'>
-                    <div className='font-rome text-center text-[2.75vmax] animate-spin text-amber-800 p-0 -mb-[0.75vmax]'>
+                <div className='absolute xl:top-[66%] md:top-[62%] top-[60%] w-fit h-auto'>
+                    <div className='font-rome text-center text-[0] animate-spin text-amber-800 p-0 -mb-[0.75vmax] overflow-hidden'>
                         {"VELAMMAL".split("").map((ltr, i) => (
-                            <span className={`animate-spin`}>{ltr}</span>
+                            <span className={`animate-[bam_0.5s_ease_forwards]`} style={{animationDelay: `${(i + 3) * 0.15}s`}}>{ltr}</span>
                         ))}
                     </div>
-                    <span className='font-rome text-black text-[1.75vmax] mt-0 p-0 animate-spin-slow'>ENGINEERING COLLEGE</span>
+                    <div className='font-rome text-center text-[0] animate-spin text-black p-0 -mb-[0.75vmax] overflow-hidden'>
+                        {"ENGINEERING COLLEGE".split("").map((ltr, i) => (
+                            <span className={`animate-[bom_0.5s_ease_forwards]`} style={{animationDelay: `${(i + 12) * 0.05}s`}}>{ltr}</span>
+                        ))}
+                    </div>
+                    {/* <div className='block font-rome text-black text-[1.5vmax] opacity-0 animate-[fadIn_1s_ease_forwards]'>ENGINEERING COLLEGE</div> */}
                 </div>
             </div>
         </> 
