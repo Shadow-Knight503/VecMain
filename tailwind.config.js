@@ -41,6 +41,10 @@ module.exports = {
         '0%': {fontSize: '0'},
         '100%': {fontSize: '1.75vmax'}
       },
+      Social: {
+        '0%': {height: '1rem'},
+        '100%': {height: '2rem'}
+      },
       fadIn: {
         '0%': {opacity: '0'},
         '100%': {opacity: '1'}

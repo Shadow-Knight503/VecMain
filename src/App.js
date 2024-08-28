@@ -17,56 +17,67 @@ const courses = [
     name: "Computer Science Engineering",
     image: "/images/CSE.jpeg", // CDN-hosted image
     link: "https://example.com/cse",
+    clr: "#01a302",
   },
   {
     name: "Artificial Intelligence and Data Science",
     image: "/images/AIDS.jpeg", // CDN-hosted image
     link: "https://example.com/aids",
+    clr: "#be3531"
   },
   {
     name: "Information Technology",
     image: "/images/IT.jpeg", // CDN-hosted image
     link: "https://example.com/it",
+    clr: "#a982b4",
   },
   {
     name: "Mechanical Engineering",
     image: "/images/MECH.jpeg", // CDN-hosted image
     link: "https://example.com/mech",
+    clr: "#896a21",
   },
   {
     name: "Civil Engineering",
     image: "/images/CIVIL.jpeg", // CDN-hosted image
     link: "https://example.com/civil",
+    clr: "#5e84a0",
   },
   {
     name: "CyberSecurity",
     image: "/images/CYBER.jpeg", // CDN-hosted image
     link: "https://example.com/cyber",
+    clr: "#114738"
   },
   {
     name: "Electrical Communication Engineering",
     image: "/images/ECE.jpeg", // CDN-hosted image
     link: "https://example.com/ece",
+    clr: "#0226c4",
   },
   {
     name: "Electrical and Electronic Engineering",
     image: "/images/EEE.jpeg", // CDN-hosted image
     link: "https://example.com/eee",
+    clr: "#ce8143"
   },
   {
     name: "Electrical and Instrumentation Engineering",
     image: "/images/EIE.jpeg", // CDN-hosted image
     link: "https://example.com/eie",
+    clr: "#ca4121"
   },
   {
     name: "Master of Business Administration",
     image: "/images/MBA.jpeg", // CDN-hosted image
     link: "https://example.com/mba",
+    clr: "#14254f"
   },
   {
     name: "Automobile Engineering",
     image: "/images/AUTO.jpeg", // CDN-hosted image
     link: "https://example.com/auto",
+    clr: "#f6a664",
   },
 ];
 

@@ -209,12 +209,13 @@ const Head = () => {
                         {/* </div> */}
                     </div>
                 </div>
-                <div className='flex font-popp bg-[#fdcc03] p-[0.35rem] gap-3 z-10 w-full h-[2.5rem] text-slate-950 rounded-b-lg'>
+                <div className='flex font-popp bg-[#fdcc03] p-[0.35rem] gap-3 z-10 w-full h-[2.5rem] text-slate-950 rounded-b-lg transition-all'>
                     <EnvelopeIcon className='size-5 inline -mr-2 mt-1'></EnvelopeIcon><p className='truncate mt-1 h-fit md:block hidden'>{hdrs[0]}</p>
                     <PhoneIcon className='size-5 inline -mr-2 mt-1'></PhoneIcon><p className='truncate mt-1 h-fit md:block hidden'>{hdrs[1]}</p>
                     <div className='flex items-center justify-end grow gap-3'>
                         {socls.map((socl) => (
-                            <a href={socl.Link}><img src={socl.Ico} alt={socl.Name} className='w-fit h-[1rem]'></img></a>
+                            <a href={socl.Link}><img src={socl.Ico} alt={socl.Name} className='w-fit h-[1rem] animate-[Social_2s_ease_infinite] text-transparent 
+                                bg-gradient-to-l from-[#fdcc03] from-50% via-black via-50% to-black to-90% bg-clip-text bg-[position:100%_0%] bg-[length:200%_100%]'></img></a>
                         ))}
                     </div>
                 </div>
