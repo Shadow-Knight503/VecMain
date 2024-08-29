@@ -11,8 +11,8 @@ import './styles.css';
 
 const ImgSld = () => {
   const [ vid, setVid ] = useState("top-[35vmax]")
-  const lst = ['Sample Txt for me', 'Hola, I kill you now', 'Placeholder, Fresh hot placholders found right here for a steal', 
-    'The Premier place to learn and grow', 'Your path to wasting 4 years of your life']
+  const lst = ['Sample Txt for me', 'The Best College', 'Placeholder, Come and Get Placed', 
+    'The Premier place to learn and grow', 'Your path to getting better 4 years of your life']
 
   const hndlScrll = () => {
     const pos = window.scrollY
@@ -40,8 +40,8 @@ const ImgSld = () => {
         <div className='absolute font-popp text-[1.5vmax] max-w-[50vmax] right-[1vmax]'>
           <div className='relative no-wrap h-[15vmax] w-[35vmax] overflow-hidden'>
             {lst.map((elm, i) => (
-              <p className={`absolute min-w-[20vmax] max-w-[30vmax] translate-x-[40vmax] animate-[slideIn_25s_ease-in_infinite] p-5 border-y-4 
-                [border-image:linear-gradient(to_right,#d96402,#efa249,#d96402)_1]`} 
+              <p className={`absolute min-w-[20vmax] max-w-[30vmax] translate-x-[40vmax] animate-[slideIn_25s_ease-in_infinite] p-5 border-y-2 
+                [border-image:linear-gradient(to_right,#d96402,#efa249,#d96402)_1] bg-[#0000001a] backdrop-blur-[0px] text-white`} 
                 style={{animationDelay: `${i * 5}s`}}>{elm}</p>
             ))}
           </div>

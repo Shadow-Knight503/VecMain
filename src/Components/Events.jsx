@@ -133,7 +133,7 @@ function Carousel() {
   };
 
   return (
-    <div className="caro-container" ref={ref}>
+    <div className="caro-container font-popp" ref={ref}>
       <motion.div
         className={`caro-content ${isPaused ? "paused" : ""}`}
         animate={controls}
