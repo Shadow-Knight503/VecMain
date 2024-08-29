@@ -27,8 +27,10 @@ const CourseCarousel = ({ courses }) => {
     {name: "Auto", clr: "#f6a664"}
   ]
 
-  const rdb_hdl = (pvl) => {
-    setPos(pvl)
+  const pos_hdl = (pvl) => {
+    if (pvl !== 0 && pvl <= courses.length) {
+      setPos(pvl)
+    }
   }
 
   // Handle next and previous slide actions
@@ -134,8 +136,13 @@ const CourseCarousel = ({ courses }) => {
     // </div>
     <div>
       <div className="grid w-full relative h-fit border border-black z-10 p-10">
-        <button className="rounded-full absolute top-1/2 left-4 w-[3vmax] p-2 h-[3vmax] bg-amber-600">
-          <ChevronLeftIcon className="size-max mr-2 text-white"></ChevronLeftIcon>
+        <button className="rounded-full absolute top-[35%] left-4 w-[3vmax] outline outline-offset-2 outline-amber-500 pr-2 h-[3vmax] bg-amber-600"
+          onClick={() => pos_hdl(pos - 1)}>
+          <ChevronLeftIcon className="size-max text-white"></ChevronLeftIcon>
+        </button>
+        <button className="rounded-full absolute top-[35%] right-4 w-[3vmax] outline outline-offset-2 outline-amber-500 pl-2 h-[3vmax] bg-amber-600"
+          onClick={() => pos_hdl(pos + 1)}>
+          <ChevronRightIcon className="size-max text-white"></ChevronRightIcon>
         </button>
         <div className="font-popp row-[1/2] col-[1/8] w-screen z-[1] h-[300px] flex items-center justify-center pointer-events-none mb-10 -ml-10"
           style={{transformStyle: 'preserve-3d', perspective: '600px'}}>
@@ -143,7 +150,8 @@ const CourseCarousel = ({ courses }) => {
             <div className={`text-center bg-white absolute w-[30vmax] h-[20vmax] transition-all duration-[0.25s] ease-linear bg-cover bg-center 
               ${(pos === i + 1) ? 'focs': ''} rounded-[20px] overflow-y-hidden group`} onClick={() => setPos(i + 1)}
               style={{transform: `rotateY(${-10 * (pos - (i + 1))}deg) translateX(${-500 * (pos - (i + 1))}px)`, backgroundImage: `url('${cur.image}')`,
-                zIndex: `${Math.max(((pos - (i + 1)) * -1), (pos - (i + 1))) + 100}`}}>  
+                zIndex: `${Math.max(((pos - (i + 1)) * -1), (pos - (i + 1))) + 100}`}}>
+              <div className={`${(pos === i + 1) ? "hidden": "block"} w-full h-full bg-[#0000001a] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[5px]`}></div>  
               <div className="grid content-end w-full h-full text-white text-[2vmax]
                 translate-y-[20vmax] delay-200 group-[.focs]:translate-y-0 duration-300 ease transition-all p-2"
                 style={{background: `linear-gradient(to top, ${cur.clr}, ${cur.clr}00 55%)`}}>
@@ -155,7 +163,7 @@ const CourseCarousel = ({ courses }) => {
         <div className="flex justify-center gap-3 w-[100vw]">
           {rdb.map((btn , i) => (
             <button className={`text-white p-2 rounded-xl min-w-[5vmax]`} style={{backgroundColor: btn.clr}} 
-              type="button" name="pos" onClick={() => {rdb_hdl(i + 1)}}>{btn.name}</button>
+              type="button" name="pos" onClick={() => {pos_hdl(i + 1)}}>{btn.name}</button>
           ))}
         </div>
       </div>

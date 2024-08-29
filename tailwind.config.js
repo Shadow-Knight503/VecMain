@@ -42,12 +42,19 @@ module.exports = {
         '100%': {fontSize: '1.75vmax'}
       },
       Social: {
-        '0%': {height: '1rem'},
-        '100%': {height: '2rem'}
+        '0%, 100%': {height: '1rem'},
+        '50%': {height: '2rem'}
       },
       fadIn: {
         '0%': {opacity: '0'},
         '100%': {opacity: '1'}
+      },
+      cnnt: {
+        '0%': {opacity: '0'},
+        '10%': {opacity: '0'},
+        '20%, 95%': {transform: 'translateX(-10vmax)', opacity: '1'},
+        '97%': {opacity: '0'},
+        '100%': {transform: 'translateX(10vmax)'},
       },
       slideIn: {
         '0%': {transform: 'translateX(40vmax)', opacity: '0'},
